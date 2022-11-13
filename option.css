@@ -1,0 +1,34 @@
+.btn-group button {
+    
+    background-color: lavender; /* purple background */
+     /* purple border */
+    color: black; /* White text */
+    padding: 20px 84px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    text-align: center; /* Float the buttons side by side */
+    font-size: large;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: yellowgreen;
+  }
+  .btn-group {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
